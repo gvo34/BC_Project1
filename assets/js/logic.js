@@ -10,6 +10,7 @@ L.tileLayer(
     'access_token=pk.eyJ1IjoiZ3Vpcmx5biIsImEiOiJjamh0dzZnaHowaTlnM3BvNGl3NzYwNDQ2In0.fjmZrTxDywSwzCeE6BYKUg',
 ).addTo(myMap);
 
+
 // An array containing each city's name, location, and population
 var cities = [{
   location: [40.7128, -74.0059],
@@ -22,9 +23,9 @@ var cities = [{
   population: "2,720,546"
 },
 {
-  location: [29.7604, -95.3698],
-  name: "Houston",
-  population: "2,296,224"
+  location: [38.9047,	-77.0164],
+  name: "Washington DC",
+  population: "693,972"
 },
 {
   location: [34.0522, -118.2437],
@@ -32,16 +33,33 @@ var cities = [{
   population: "3,971,883"
 },
 {
-  location: [41.2524, -95.9980],
-  name: "Omaha",
-  population: "446,599"
+  location: [42.35843,	-71.0598],
+  name: "Boston",
+  population: "673,184"
+},
+{
+  location: [35.7721,	-78.6386],
+  name: "Raleigh",
+  population: "458,880"
+},
+{
+  location: [30.26715,	-97.7431],
+  name: "Austin",
+  population: "947,890"
+},
+{
+  location: [33.749,	-84.388],
+  name: "Atlanta",
+  population: "472,522"
 }
+
+
 ];
 
 // Loop through the cities array and create one marker for each city, bind a popup containing its name and population add it to the map
 for (var i = 0; i < cities.length; i++) {
   var city = cities[i];
   L.marker(city.location)
-    .bindPopup("<h1>" + city.name + "</h1> <hr> <h3>Population " + city.population + "</h3>")
+    .bindPopup("<h4>" + city.name + "</h4> <hr> <h5>Population " + city.population + "</h5>")
     .addTo(myMap);
 }

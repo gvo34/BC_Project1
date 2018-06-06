@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- Our CSS -->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
 
     <body>
@@ -24,12 +24,12 @@
         <div class="container-fluid">
 
 
-            <div class="jumbotron">
+            <div class="jumbotron" style="margin-top:20px">
             <h1>Amazon Pick me!</h1>
             <p>
                     Cities across the U.S are competing to attract Amazon’s second head quarters which would bring 50,000 jobs and $5 billion investment. Out of the original 238 cities, 20 cities made it the final cut.
                     If Amazon were a person (Yes…corporations are people!) which city should he choose? 
-                    We are here to help!                
+                    Let's look up some statistics!                
             </p>
             </div>
 
@@ -38,14 +38,14 @@
                 <div class="col-md-10">
                         <div class="card" style="width: 80rem;">
                         <div class="card-body">
-                                <h5>
+                                <h2 style="text-align:center">
                                         Shortlist
-                                </h5>
+                                </h2>
 
-                        <iframe src="mapit.html" width="100%" height="100%">
+                        <iframe src="assets/mapit.html" width="100%" height="100%">
                                 Map of cities
                             </iframe>                      
-                        <h6 class="card-subtitle mb-2 text-muted">All the 20 shortlisted cities meet this criteria</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">All the 8 shortlisted cities meet this criteria</h6>
                         <p class="card-text">
                                 Metropolitan areas with more than one million people.  
                             
@@ -54,10 +54,10 @@
                                     Non quantifiable metrics. We assumed all the cities meet this criteria as well.
                                 
                                 Urban or suburban locations with the potential to attract and retain strong technical talent.
-                                Measurable Metrics. Criteria we used!
+                                Measurable Metrics and Criterias we used are explained in detail in the 
                                 
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        
+                        <a href="https://github.com/gvo34/amazonsite/blob/master/Project1_AmazonSites.xlsx" class="card-link">Powerpoint presentation</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                 <div class="col-md-2">
                     <ul class="list-group">
                         <li class="list-group-item">Austin</li>
-                        <li class="list-group-item"> WashingtonDC </li>
+                        <li class="list-group-item"> Washington DC </li>
                         <li class="list-group-item">Boston</li>
                         <li class="list-group-item">Los Angeles</li>
                         <li class="list-group-item">Chicago</li>
@@ -80,10 +80,19 @@
 
         <hr>
     
-    <h2>Criterias revised</h2>
+   
 
-    <div id="card">
-        <div id="card-body">
+    <div id="card" >
+        <div class="card-header"> 
+            <div class="jumbotron container-fluid" style="margin:10px">
+                <h2 >Criterias revised</h2>
+
+                We had overall 17 categories on which to rank a city, to ensure that consideration for categories are more in line with potential talent attraction, we added weights to each category. For instance Technical Attainment and Home Affordability are categories that weigh more than certain amenities. The weights were determine by answering one of the two questions: What would make someone in tech move cities or what would grow the tech labor force?
+
+The overall ranking is then adjusted to show the weighted score for each city. In which case Raleigh and Washington DC rank among the top.
+            </div>
+        </div>
+        <div id="card-body" style="border-style:outset; margin:10px">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
 
@@ -94,30 +103,30 @@
               
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active"> 
+              <div class="item active"> 
                 <div class="slide-0"></div>    
                 <img class="d-block w-100" src="Final Results/Plots/Educational_Attainment_All_Levels.png" alt="Diversity">
               </div>
-              <div class="carousel-item">
+              <div class="item">
                     <div class="slide-1"></div>
                 <img class="d-block w-100" src="Final Results/Plots/affordhouse.png" alt="Housing">
               </div>
-              <div class="carousel-item">
+              <div class="item">
                     <div class="slide-2"></div>
                     <img class="d-block w-100" src="Final Results/Plots/Walk-Bike-Transit Score by City.png" alt="Transportation">
               </div>
-              <div class="carousel-item">
+              <div class="item">
                     <div class="slide-3"></div>
                     <img class="d-block w-100" src="Final Results/Plots/Environment_Index.png" alt="Amenities">
                </div>
             </div>
 
 
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
